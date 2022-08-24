@@ -1,0 +1,14 @@
+[
+  {
+    "name": "video",
+    "path": "/video",
+    "component": "D:\\\\cream\\\\new project\\\\mordee\\\\twilio\\\\nuxt-twilio\\\\pages\\\\video.vue",
+    "chunkName": "pages/video"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "D:\\\\cream\\\\new project\\\\mordee\\\\twilio\\\\nuxt-twilio\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
+  }
+]
