@@ -10,6 +10,8 @@ import '..\\node_modules\\bootstrap\\dist\\css\\bootstrap.css'
 
 import '..\\node_modules\\bootstrap-vue\\dist\\bootstrap-vue.css'
 
+import '..\\node_modules\\@fortawesome\\fontawesome-svg-core\\styles.css'
+
 import '..\\styles.css'
 
 import _6f6c098b from './layouts/default.vue'

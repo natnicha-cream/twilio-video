@@ -32,7 +32,15 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
+    '@nuxtjs/fontawesome',
   ],
+  fontawesome: {
+    icons: {
+      solid: true,
+      regular:true,
+      brands:true
+    }
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [

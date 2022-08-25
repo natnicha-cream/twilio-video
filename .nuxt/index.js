@@ -12,9 +12,10 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_5ae5c144 from 'nuxt_plugin_plugin_5ae5c144' // Source: .\\components\\plugin.js (mode: 'all')
-import nuxt_plugin_bootstrapvue_19d88296 from 'nuxt_plugin_bootstrapvue_19d88296' // Source: .\\bootstrap-vue.js (mode: 'all')
-import nuxt_plugin_axios_ba3c0932 from 'nuxt_plugin_axios_ba3c0932' // Source: .\\axios.js (mode: 'all')
+import nuxt_plugin_plugin_25cf5d46 from 'nuxt_plugin_plugin_25cf5d46' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_bootstrapvue_16646f98 from 'nuxt_plugin_bootstrapvue_16646f98' // Source: .\\bootstrap-vue.js (mode: 'all')
+import nuxt_plugin_axios_16640a69 from 'nuxt_plugin_axios_16640a69' // Source: .\\axios.js (mode: 'all')
+import nuxt_plugin_fontawesome_5858aaeb from 'nuxt_plugin_fontawesome_5858aaeb' // Source: .\\fontawesome.js (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -178,16 +179,20 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_5ae5c144 === 'function') {
-    await nuxt_plugin_plugin_5ae5c144(app.context, inject)
+  if (typeof nuxt_plugin_plugin_25cf5d46 === 'function') {
+    await nuxt_plugin_plugin_25cf5d46(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_bootstrapvue_19d88296 === 'function') {
-    await nuxt_plugin_bootstrapvue_19d88296(app.context, inject)
+  if (typeof nuxt_plugin_bootstrapvue_16646f98 === 'function') {
+    await nuxt_plugin_bootstrapvue_16646f98(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_ba3c0932 === 'function') {
-    await nuxt_plugin_axios_ba3c0932(app.context, inject)
+  if (typeof nuxt_plugin_axios_16640a69 === 'function') {
+    await nuxt_plugin_axios_16640a69(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_fontawesome_5858aaeb === 'function') {
+    await nuxt_plugin_fontawesome_5858aaeb(app.context, inject)
   }
 
   // Lock enablePreview in context
