@@ -1,14 +1,23 @@
 [
   {
+    "name": "login",
+    "path": "/login",
+    "component": "D:\\\\cream\\\\new project\\\\mordee\\\\git\\\\twilio-video\\\\pages\\\\login.vue",
+    "chunkName": "pages/login",
+    "_name": "_84038d9c"
+  },
+  {
     "name": "video",
     "path": "/video",
-    "component": "D:\\\\cream\\\\new project\\\\mordee\\\\twilio\\\\nuxt-twilio\\\\pages\\\\video.vue",
-    "chunkName": "pages/video"
+    "component": "D:\\\\cream\\\\new project\\\\mordee\\\\git\\\\twilio-video\\\\pages\\\\video.vue",
+    "chunkName": "pages/video",
+    "_name": "_73eb8544"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "D:\\\\cream\\\\new project\\\\mordee\\\\twilio\\\\nuxt-twilio\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "component": "D:\\\\cream\\\\new project\\\\mordee\\\\git\\\\twilio-video\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_1752d3ca"
   }
 ]
