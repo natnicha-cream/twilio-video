@@ -23,7 +23,7 @@
           <div class="ciclie-icon">
             <font-awesome-icon class="icon-custom" icon="fa-solid fa-rotate" />
           </div>
-          <div class="ciclie-icon-phone">
+          <div class="ciclie-icon-phone" @click.prevent="onDisconected()">
             <font-awesome-icon class="icon-phone" icon="fa-solid fa-phone-flip" />
           </div>
           <div class="ciclie-icon">
@@ -33,6 +33,7 @@
             <font-awesome-icon v-if="!isVideoMuted" class="icon-custom" icon="fa-solid fa-video" />
             <font-awesome-icon v-if="isVideoMuted" class="icon-custom" icon="fa-solid fa-video-slash" />
           </div>
+
         </div>
       </div>
     </div>
@@ -91,6 +92,7 @@ export default {
       this.room.on("participantDisconnected", this.handleDisconnectedParticipant);
       window.addEventListener("pagehide", () => this.room.disconnect());
       window.addEventListener("beforeunload", () => this.room.disconnect());
+
 
     },
     handleConnectedParticipant(participant, types = "remote") {
@@ -228,8 +230,18 @@ export default {
         this.isVideoMuted = !this.isVideoMuted
       }
     },
-  },
+    // ออกจากห้อง
+    onDisconected(){
+        this.room.localParticipant.tracks.forEach(publication => {
+          const attachedElements = publication.track.detach();
+          attachedElements.forEach(element => element.remove());
+        });
+        this.room.disconnect();
+    },
+
+  }
 }
+    
 </script>
 <style scoped lang="scss">
 .card-option {
